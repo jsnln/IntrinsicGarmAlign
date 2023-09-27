@@ -1,0 +1,38 @@
+smpl_folder: 'path_to_smpl'
+
+data_folder: 'data/processed/G04'
+input_folder: 'packed'
+eigenfuncs_folder: 'step1_eigenfuncs'
+eigenfuncs_vis_folder: 'step1_eigenfuncs_vis'
+posed_folder: 'step2_posed_templates'
+coarse_folder: 'step3_fitted_coarse'
+eigenfuncs_rectified_folder: 'step4_eigenfuncs_rectified'
+eigenfuncs_rectified_vis_folder: 'step4_eigenfuncs_rectified_vis'
+eigenfuncs_deformed_folder: 'step5_eigenfuncs_deformed'
+refined_folder: 'step6_fitted_refined'
+
+num_eigens_u: 50
+num_eigens_c: 100
+eigens_range: [1, 50]
+num_steps_coarse: 3000
+num_steps_refine: 300
+
+scan_index_range: [0, 118]
+subject_name: G04
+leg_angle: 0
+
+template_id: 0
+template_mesh_fn: 'canonicalized_template.obj'
+template_lbsw_fn: 'garment_template_weights.npy'
+gender: 'male'
+
+deform_scale_coarse: 0.01
+lr_coarse: 0.005
+color_scale_coarse: 0.25
+
+lr_refine: 0.005
+deform_scale_refine: 0.01
+color_scale_refine: 1.0
+eigen_scale_refine: 4.0
+
+lap_scale: 1.0
